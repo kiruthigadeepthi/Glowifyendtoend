@@ -18,3 +18,4 @@ class HomePage:
         time.sleep(2)
         self.driver.find_element(By.LINK_TEXT,option_text).click()
         return self.driver.current_url
+ 
