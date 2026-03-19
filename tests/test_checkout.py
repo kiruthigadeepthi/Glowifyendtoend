@@ -28,6 +28,6 @@ def test_checkout_flow(driver):
 
     checkoutpage=CheckoutPage(driver)
     checkoutpage.shipping("Kiruthiga","Ajith","9597840780","abc","xyz city","TN","625435")
-
+    #checkoutpage.logout()
     #pay=PaymentPage(driver)
     #pay.payment("5500 6700 0000 1002","03/32","765")

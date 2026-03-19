@@ -12,5 +12,6 @@ def test_sort_dropdown(driver, option_text):
     page = SortPage(driver)
     page.load()
     current = page.select_sort_option(option_text)
+    driver.save_screenshot("screenshots/sorting.png")
     time.sleep(2)
     assert current == option_text

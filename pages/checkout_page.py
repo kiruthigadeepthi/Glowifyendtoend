@@ -21,7 +21,12 @@ class CheckoutPage:
         self.driver.find_element(By.NAME,"pincode").send_keys(pincode)
         time.sleep(1)
         self.driver.find_element(By.XPATH,"/html/body/div[3]/div/div/form/button").click()
-        time.sleep(3)
+        
+    #def logout(self):
+        #self.driver.find_element(By.XPATH,"/html/body/div[1]/div[2]/nav/div/div/div[2]/div[2]/a[2]").click()
+   
+   
+    """
     def payment(self,card_number,expirydate,cvv):
         card=self.driver.find_element(By.XPATH,"/html/body/div/div[1]/div/div[3]/div[1]/div[2]/div/div/div")
         card.send_keys(card_number)
@@ -30,3 +35,4 @@ class CheckoutPage:
         CVV=self.driver.find_element(By.XPATH,"/html/body/div/div[1]/div/div[3]/div[1]/div[2]/div/div/div/div/div[4]/div/form/div[1]/div[2]/label[2]/input")
         CVV.send_keys(cvv)
         self.driver.find_element(By.XPATH,"/html/body/div/div[1]/div/div[3]/div[2]/div/div[2]/button").click()
+    """

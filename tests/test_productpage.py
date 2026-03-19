@@ -13,6 +13,7 @@ def test_product_details_and_cart(driver):
 
     # Add to cart and verify navigation
     page.add_to_cart()
+    driver.save_screenshot("screenshots/addedtocart.png")
     time.sleep(2)
     cart_url = page.go_to_cart()
 
