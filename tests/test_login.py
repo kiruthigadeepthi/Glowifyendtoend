@@ -1,5 +1,5 @@
 from pages.login import LoginPage
-import allure
+
 
 def test_valid_login(driver):
     page = LoginPage(driver)
